@@ -1,3 +1,4 @@
-# Semester-2-ARC-Simulation
-This is my semester 2 progress for the Thesis project: Abstract Robot Reasoning. 
-This repository is based on the Panda Robot in Mujoco project (licensed under Apache 2.0). Significant modifications and extensions have been made by Rourke Young, 2025.
+## License and Attribution
+This project is based on the [Panda Robot in MuJoCo](https://github.com/JeanElsner/panda_mujoco) repository by Jean Elsner, licensed under the Apache License, Version 2.0.  
+Significant modifications and extensions © 2025 Rourke Young.
+
