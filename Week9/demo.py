@@ -1,3 +1,5 @@
+# Modified by Rourke Young (2025)
+# Original code from Panda Robot in MuJoCo (Apache 2.0 License)
 ##### demo.py
 import mujoco
 import glfw
@@ -487,3 +489,4 @@ class Demo:
 
 if __name__ == "__main__":
     Demo().start()
+
