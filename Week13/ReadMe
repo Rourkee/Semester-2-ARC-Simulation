@@ -1,0 +1,21 @@
+This work contains the code used for the Thesis 'Abstract Roboto Reasoning'. The aim of the research was to link 3D Sensorimotor commands to 2D Symbolic transformations (inspired by ARC).
+
+The code creates a simulation platform in Mujoco to test the reasoning capability on a Franka Emika Panda Robot.
+
+The code works as follows.
+
+demo.py —> entry point that runs the simulation and viewer.
+
+dynamicworld.py —> generates the MuJoCo XML world for each case (grid, plate, lines, bins, dispenser).
+
+Ruleto3D/ —> projects 2D geometric rules into per-object (row, col) goals and provides rotation hints.
+
+grid_utils.py —> converts between 2D grids and 3D poses (scene extraction, grid↔pose mapping, Z cache).
+
+transformation.py —> symbolic layer: detects programs/rules and produces residual DSL edits.
+
+RobotControl/ —> low-level control (Cartesian impedance), rotation controller, movement controller, dispenser/bin manager.
+
+arc_utils.py —> ARC task I/O (load train/test splits).
+
+scene_memory.py, plotting.py -> record and plot the end effector trajectory co-ordinates across the duration of the task.
